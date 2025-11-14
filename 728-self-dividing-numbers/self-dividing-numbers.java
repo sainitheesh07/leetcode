@@ -1,7 +1,5 @@
 class Solution {
     public boolean div(int n){
-        boolean e=true;
-        if(n%10==0) e=false;
         int t=n;
         while(n>0){
             int r=n%10;
