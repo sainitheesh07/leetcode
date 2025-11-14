@@ -8,6 +8,7 @@ class Solution {
         for(int i=1;i<=nums.length;i++){
             if(!hs.contains(i)) a.add(i);
         }
-       return a;       
+       return a;
+              
     }
 }
