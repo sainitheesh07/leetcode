@@ -4,11 +4,12 @@ class Solution {
         HashSet<Character> hs=new HashSet<>();
         for(int i=0;i<l;i++){
             char c=password.charAt(i);
-            if(c>=65 && c<=90 &&(!hs.contains(c))) t+=2;
-            if(c>=97 && c<=122 && (!hs.contains(c))) t+=1;
-            if(c>=48 && c<=57 && (!hs.contains(c))) t+=3;
-            if((c=='!'||c=='@' ||c=='#' ||c=='$') && (!hs.contains(c))) t+=5;
+            if(hs.contains(c)) continue;
             hs.add(c);
+            if(c>=65 && c<=90) t+=2;
+            else if(c>=97 && c<=122) t+=1;
+            else if(c>=48 && c<=57) t+=3;
+            else t+=5;
         }
         return t;
     }
