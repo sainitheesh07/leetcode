@@ -5,10 +5,11 @@ class Solution {
             char c=s.charAt(i);
             hp.put(c,hp.getOrDefault(c,0)+1);
         }
-        HashSet<Integer> hs=new HashSet<>();
+        int v=0;
         for(Integer i:hp.values()){
-            hs.add(i);
+            if(v==0) v=i;
+            else if(v!=i) return false;
         }
-        return hs.size()==1;
+        return true;
     }
 }
