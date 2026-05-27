@@ -7,7 +7,6 @@ class Solution {
             length++;
             n/=10;
         }
-        System.out.println(m);
         int num=0,i=0;
         while(i<length){
             num=num*10+m;
