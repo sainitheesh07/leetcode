@@ -11,7 +11,6 @@ class Solution {
             t+=nums[i];
             i++;
         }
-        System.out.println(s+" "+t);
         if(s==t) return -1;
         if(s<t) return 1;
         else return 0;
