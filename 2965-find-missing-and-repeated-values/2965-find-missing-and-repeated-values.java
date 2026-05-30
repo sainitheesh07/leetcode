@@ -13,7 +13,6 @@ class Solution {
         int b=grid[0].length;
         int n=b*b;
         int a=(n*(n+1))/2;
-        System.out.println(a+" "+s);
         arr[1]=a-s;
         arr[0]=c;
         return arr;
