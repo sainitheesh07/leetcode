@@ -16,16 +16,8 @@ class Solution {
         return t==1;
     }
     public int sumOfPrimesInRange(int n) {
-        int s=0,a=0,b=0,num=reverse(n);
-        if(n>num){
-            a=n;
-            b=num;
-        }
-        else{
-            a=num;
-            b=n;
-        }
-        for(int i=b;i<=a;i++){
+        int s=0,num=reverse(n);
+        for(int i=Math.min(n,num);i<=Math.max(n,num);i++){
             if(prime(i)) s+=i;
         }
         return s;
