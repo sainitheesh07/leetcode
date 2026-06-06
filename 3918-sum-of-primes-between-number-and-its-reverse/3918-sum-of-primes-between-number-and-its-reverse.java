@@ -25,7 +25,6 @@ class Solution {
             a=num;
             b=n;
         }
-        System.out.println(a+" "+b);
         for(int i=b;i<=a;i++){
             if(prime(i)) s+=i;
         }
