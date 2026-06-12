@@ -4,9 +4,7 @@ class Solution {
         for(int i=0;i<s.length();i++){
             char c=s.charAt(i);
             if(Character.isDigit(c)) sb.append((char)(97+(s.charAt(i-1)-'a')+(c-'0')));
-            else{
-                sb.append(c);
-            }
+            else sb.append(c);
         }
         return sb.toString();
     }
