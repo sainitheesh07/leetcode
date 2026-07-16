@@ -1,0 +1,12 @@
+class Solution {
+    public int appendCharacters(String s, String t) {
+        int i=0,j=0;
+        while(i<s.length() && j<t.length()){
+            char c=s.charAt(i);
+            char ch=t.charAt(j);
+            if(c==ch) j++;
+            i++;
+        }
+        return t.length()-j;
+    }
+}
