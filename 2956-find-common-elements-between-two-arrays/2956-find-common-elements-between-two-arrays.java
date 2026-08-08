@@ -11,7 +11,6 @@ class Solution {
                 s+=arr2[i];
             }
         }
-        System.out.println(s+" "+t);
         return new int[] {t,s};
     }
 }
